@@ -1,0 +1,35 @@
+{
+  "@@locale": "en",
+  "helloWorld": "Hello World",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "greeting": "{hello} {world}",
+  "@greeting": {
+    "description": "A message with a two parameters",
+    "placeholders": {
+      "hello": {},
+      "world": {}
+    }
+  },
+  "numberOfDataPoints": "Number of data points: {value}",
+  "@numberOfDataPoints": {
+    "description": "A message with a formatted int parameter",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "format": "compactLong"
+      }
+    }
+  },
+  "helloWorldOn": "Hello World on {date}",
+  "@helloWorldOn": {
+    "description": "A message with a date parameter",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      }
+    }
+  }
+}

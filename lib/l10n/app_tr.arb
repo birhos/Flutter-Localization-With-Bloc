@@ -1,0 +1,35 @@
+{
+  "@@locale": "tr",
+  "helloWorld": "Merhaba Dünya",
+  "@helloWorld": {
+    "description": "Geleneksel yeni başlayan programcı selamlaması"
+  },
+  "greeting": "{hello} {world}",
+  "@greeting": {
+    "description": "İki parametreli bir mesaj",
+    "placeholders": {
+      "hello": {},
+      "world": {}
+    }
+  },
+  "numberOfDataPoints": "Veri noktalarının sayısı: {value}",
+  "@numberOfDataPoints": {
+    "description": "Biçimlendirilmiş int parametresine sahip bir mesaj",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "format": "compactLong"
+      }
+    }
+  },
+  "helloWorldOn": "{date} tarihinde Merhaba Dünya",
+  "@helloWorldOn": {
+    "description": "Tarih parametresi olan bir mesaj",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      }
+    }
+  }
+}
