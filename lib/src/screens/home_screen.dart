@@ -22,6 +22,8 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: <Widget>[
           _buildButton('TR', Language.TR),
           _buildButton('EN', Language.EN),
+          _buildButton('HI', Language.HI),
+          _buildButton('GU', Language.GU),
         ],
       ),
 
@@ -58,7 +60,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
             //
             Text(
-              AppLocalizations.of(context)!.helloWorldOn(DateTime.utc(1997, 04, 01)),
+              AppLocalizations.of(context)!
+                  .helloWorldOn(DateTime.utc(1997, 04, 01)),
             ),
           ],
         ),
@@ -70,6 +73,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.red,
+        ),
         child: Text(
           title,
         ),

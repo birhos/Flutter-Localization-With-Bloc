@@ -1,0 +1,35 @@
+{
+  "@@locale": "hi",
+  "helloWorld": "हैलो वर्ल्ड",
+  "@helloWorld": {
+    "description": "पारंपरिक नवजात प्रोग्रामर अभिवादन"
+  },
+  "greeting": "{हैलो वर्ल्ड}",
+  "@greeting": {
+    "description": "दो मापदंडों वाला एक संदेश",
+    "placeholders": {
+      "hello": {},
+      "world": {}
+    }
+  },
+  "numberOfDataPoints": "डेटा बिंदुओं की संख्या: {मान}",
+  "@numberOfDataPoints": {
+    "description": "स्वरूपित int पैरामीटर वाला संदेश",
+    "placeholders": {
+      "value": {
+        "type": "int यहाँ",
+        "format": "कॉम्पैक्टलॉन्ग"
+      }
+    }
+  },
+  "helloWorldOn": "हैलो वर्ल्ड {date} को",
+  "@helloWorldOn": {
+    "description": "दिनांक पैरामीटर वाला एक संदेश",
+    "placeholders": {
+      "date": {
+        "type": "दिनांक समय",
+        "format": "वाईएमडी"
+      }
+    }
+  }
+}
