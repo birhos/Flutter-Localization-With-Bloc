@@ -1,0 +1,36 @@
+{
+  "@@locale": "gu",
+  "helloWorld": "હેલો વર્લ્ડ",
+  "@helloWorld": {
+    "description": "પરંપરાગત નવજાત પ્રોગ્રામર શુભેચ્છા"
+  },
+  "greeting": "{હેલો વર્લ્ડ}",
+  "@greeting": {
+    "description": "બે પરિમાણો સાથેનો સંદેશ",
+    "placeholders": {
+      "hello": {},
+      "world": {}
+    }
+  },
+  "numberOfDataPoints": "ડેટા પોઈન્ટની સંખ્યા:: {value}",
+  "@numberOfDataPoints": {
+    "description": "ફોર્મેટ કરેલ પૂર્ણાંક પરિમાણો સાથેનો સંદેશ",
+    "placeholders": {
+      "value": {
+        "type": "int અહીં",
+        "format": "કોમ્પેક્ટ લોંગ"
+      }
+    }
+  },
+  "helloWorldOn": "{date} ના રોજ હેલો વર્લ્ડ",
+  "@helloWorldOn": {
+    "description": "તારીખના પરિમાણો સાથેનો સંદેશ",
+
+    "placeholders": {
+      "date": {
+        "type": "તારીખનો સમય",
+        "format": "ymd"
+      }
+    }
+  }
+}
