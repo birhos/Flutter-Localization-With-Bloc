@@ -3,11 +3,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../enums/language.dart';
 
-class LanguageBloc extends Bloc<Language, Locale> {
+class LanguageBloc extends Cubit<Locale> {
   LanguageBloc() : super(Language.TR.xGetLocale);
 
-  @override
-  Stream<Locale> mapEventToState(Language event) async* {
-    yield event.xGetLocale;
+  void updateLocale(Language value) {
+    emit(value.xGetLocale);
   }
 }

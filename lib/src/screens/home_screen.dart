@@ -60,8 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
             //
             Text(
-              AppLocalizations.of(context)!
-                  .helloWorldOn(DateTime.utc(1997, 04, 01)),
+              AppLocalizations.of(context)!.helloWorldOn(DateTime.utc(1997, 04, 01)),
             ),
           ],
         ),
@@ -81,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
           title,
         ),
         onPressed: () {
-          BlocProvider.of<LanguageBloc>(context).add(language);
+          context.read<LanguageBloc>().updateLocale(language);
         },
       ),
     );
